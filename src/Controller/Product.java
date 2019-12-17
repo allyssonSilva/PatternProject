@@ -5,6 +5,8 @@ import View.Pedido;
 
 public  class Product {
 	
+	public static Product instancia;
+	
 	protected ProductState estados;
 
 	protected int codigo;
@@ -14,8 +16,16 @@ public  class Product {
 	protected double preco;
 	protected int qtd;
 	
-	public Product() {
+	protected Product() {
 		estados = new Pedido();
+	}
+	
+	//SINGLETON - PONTO DE ACESSO
+	public static Product getInstance() {
+		if(instancia == null) {
+			instancia = new Product();
+		}
+		return instancia;
 	}
 		
 

@@ -8,11 +8,11 @@ public class Main {
 	
 	
 	public static void main(String[] args) {
-		Product produto = new Product();
+		Product produto = Product.getInstance();
 		Product myVol = new Volume();
 		Documento doc = new Documento();
 		
-		doc.aprovarNota("Nota Gerada");
+		doc.aprovarNota(" **** Nota Gerada");
 		
 		
 		if(myVol.status) {
@@ -28,8 +28,8 @@ public class Main {
 			
 			System.out.println("------------------------------------------------------");
 			
-			doc.gerarGuia("Guia Gerada");
-			produto.pedidoCompleto();
+			doc.gerarGuia(" **** Guia Gerada");
+			produto.getInstance().pedidoCompleto();
 			
 			doc.gerarNota();
 			

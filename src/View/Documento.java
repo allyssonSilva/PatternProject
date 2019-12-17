@@ -33,7 +33,7 @@ public class Documento {
 
 	
 	public void gerarNota() {
-		System.out.println(docNF);
+		System.out.println("\n"+ docNF);
 	}
 
 }
