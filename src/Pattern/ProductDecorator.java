@@ -1,6 +1,6 @@
 package Pattern;
 
-import Main.Product;
+import Controller.Product;
 
 public abstract class ProductDecorator extends Product {
 	
